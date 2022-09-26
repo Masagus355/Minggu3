@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Latihan Mandiri Minggu 3  </title>
+    </head>
+    <!--KIAGUS RIYASQIE RESADU - A11.2022.14355 - 4108-->
+    <body>
+        <h1>Latihan Mandiri Minggu 3</h1>
+        <h2 style="text-align:center"> Group-B Rallye Tribute</h2>
+        
+        <div style="text-align:center"> 
+            <button onclick="playPause()">Play/Pause</button> 
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+            
+        
+        <video id="video1" width="800" height="400"  >
+            <source src="RallyGroupBTrbt.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <p>  The following video is a tribute to the rallying in the middle 80's<br>
+            whence the Group B monster machines dominated the championship. <br>
+        The tracks were extremely dangerous and the safety barriers were made out of the crowds.<br>
+    Since the cars became as much as powerful as the F1 cars at the time,<br>
+     it was too much for the human body to keep the monsters in the tracks.<br>
+    And so, in 1986, after several horrible crashes,<br>
+     The FIA banned Group B rally forever.</p>
+           
+
+        <script> 
+            var myVideo = document.getElementById("video1"); 
+            
+            function playPause() { 
+              if (myVideo.paused) 
+                myVideo.play(); 
+              else 
+                myVideo.pause(); 
+            } 
+            
+            function makeBig() { 
+                myVideo.width = 560; 
+            } 
+            
+            function makeSmall() { 
+                myVideo.width = 320; 
+            } 
+            
+            function makeNormal() { 
+                myVideo.width = 420; 
+            } 
+            </script> 
+
+            
+    </body>
+    </html>
+    
+
